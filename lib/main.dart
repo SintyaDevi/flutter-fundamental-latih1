@@ -9,12 +9,9 @@ import 'package:flutter_application_1/basic_widgets/loading_cupertino.dart';
 import 'basic_widgets/text_widget.dart';
 
 void main() {
-
-  // runApp(const MyApp());
+  runApp(const MyApp());
   // runApp(const MyScaffold());
-    runApp(const MyDate());
-
-
+  // runApp(const MyDate());
 }
 
 class MyApp extends StatelessWidget {
@@ -43,10 +40,10 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      // home: Scaffold(body: MyDialog()),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const MyInput(),
 
+      // home: Scaffold(body: MyDialog()),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyInput(),
     );
   }
 }
@@ -120,10 +117,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-          // MyTextWidget(),
-          // const MyImageWidget(),
-          // Mycupertino(),
-          MyFAB(),
+            // MyTextWidget(),
+            // const MyImageWidget(),
+            // Mycupertino(),
+            MyFAB(),
             const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',

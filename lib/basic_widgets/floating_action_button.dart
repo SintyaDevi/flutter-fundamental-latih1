@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 class MyFAB extends StatelessWidget {
-  const MyFAB ({Key? key}) : super(key: key);
+  const MyFAB({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-  return MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -19,4 +19,3 @@ class MyFAB extends StatelessWidget {
     );
   }
 }
-
